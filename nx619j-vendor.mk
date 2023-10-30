@@ -285,7 +285,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx619j/proprietary/vendor/lib64/hw/audio.primary.sdm845.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.sdm845.so \
     vendor/nubia/nx619j/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
     vendor/nubia/nx619j/proprietary/vendor/lib64/hw/fingerprint.goodix.sdm845.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.sdm845.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib64/hw/fingerprint.silead.sdm845.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.silead.sdm845.so \
+    vendor/nubia/nx619j/proprietary/vendor/lib64/hw/fingerprint.silead.spec.sdm845.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.silead.spec.sdm845.so \
     vendor/nubia/nx619j/proprietary/vendor/lib64/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdb-fts.so \
     vendor/nubia/nx619j/proprietary/vendor/lib64/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbloader.so \
     vendor/nubia/nx619j/proprietary/vendor/lib64/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbrtac.so \
