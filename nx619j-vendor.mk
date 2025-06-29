@@ -7,10 +7,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/nubia/nx619j/proprietary/system/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/audiosphere.xml \
-    vendor/nubia/nx619j/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
-    vendor/nubia/nx619j/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
-    vendor/nubia/nx619j/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service-qti \
-    vendor/nubia/nx619j/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/nubia/nx619j/proprietary/vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
     vendor/nubia/nx619j/proprietary/vendor/etc/acdbdata/MTP/MTP_Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Codec_cal.acdb \
     vendor/nubia/nx619j/proprietary/vendor/etc/acdbdata/MTP/MTP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_General_cal.acdb \
@@ -178,18 +174,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx619j/proprietary/vendor/firmware/nubia_tp_jdi_fw.img:$(TARGET_COPY_OUT_VENDOR)/firmware/nubia_tp_jdi_fw.img \
     vendor/nubia/nx619j/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
     vendor/nubia/nx619j/proprietary/vendor/firmware/tfa9xxx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa9xxx.cnt \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/com.qti.sensor.imx000.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.imx000.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/com.qti.sensor.imx318.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.imx318.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/com.qti.sensor.imx362.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.imx362.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/com.qti.sensor.imx499.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.imx499.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/com.qti.sensor.imx519.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.imx519.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/com.qti.sensor.nx619_imx519.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.nx619_imx519.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/com.qti.sensor.nx619_ov8856.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.nx619_ov8856.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/com.qti.sensor.ov12a10.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.ov12a10.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/com.qti.sensor.ov13855.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.ov13855.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/com.qti.sensor.ov13880.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.ov13880.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/com.qti.sensor.ov8856.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.ov8856.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/com.qti.sensor.s5k2x7.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.s5k2x7.so \
     vendor/nubia/nx619j/proprietary/vendor/lib/camera/com.qti.sensormodule.nubia_imx499.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.nubia_imx499.bin \
     vendor/nubia/nx619j/proprietary/vendor/lib/camera/com.qti.sensormodule.nubia_nx619_imx519.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.nubia_nx619_imx519.bin \
     vendor/nubia/nx619j/proprietary/vendor/lib/camera/com.qti.sensormodule.nubia_nx619_ov8856.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.nubia_nx619_ov8856.bin \
@@ -201,98 +185,114 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx619j/proprietary/vendor/lib/camera/com.qti.tuned.nubia_nx619_imx519.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.nubia_nx619_imx519.bin \
     vendor/nubia/nx619j/proprietary/vendor/lib/camera/com.qti.tuned.nubia_nx619_ov8856.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.nubia_nx619_ov8856.bin \
     vendor/nubia/nx619j/proprietary/vendor/lib/camera/com.qti.tuned.nubia_s5k2x7.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.nubia_s5k2x7.bin \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.arcsoft.node.capturebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.arcsoft.node.capturebokeh.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.arcsoft.node.realtimebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.arcsoft.node.realtimebokeh.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.nubia.node.nubiaalgorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.nubia.node.nubiaalgorithm.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.nubia.node.nubiahdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.nubia.node.nubiahdr.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.nubia.node.realtimeaicamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.nubia.node.realtimeaicamera.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.nubia.node.realtimealgorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.nubia.node.realtimealgorithm.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.eisv2.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.eisv3.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qti.hvx.addconstant.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.hvx.addconstant.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qti.hvx.binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.hvx.binning.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qti.node.dummyrtb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.dummyrtb.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qti.node.dummysat.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.dummysat.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qti.node.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.eisv2.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qti.node.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.eisv3.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qti.node.gpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.gpu.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qti.node.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.memcpy.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qti.node.remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.remosaic.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qti.node.stich.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.stich.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qti.node.swregistration.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.swregistration.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qti.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.aec.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qti.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.af.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qti.stats.afd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.afd.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qti.stats.asd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.asd.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qti.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.awb.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qti.stats.awbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.awbwrapper.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qti.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlib.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qti.stats.pdlibsony.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlibsony.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlibwrapper.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qtistatic.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.aec.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qtistatic.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.af.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qtistatic.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.awb.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/components/com.qtistatic.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.pdlib.so \
     vendor/nubia/nx619j/proprietary/vendor/lib/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreview.bin \
     vendor/nubia/nx619j/proprietary/vendor/lib/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreviewlite.bin \
     vendor/nubia/nx619j/proprietary/vendor/lib/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideo.bin \
     vendor/nubia/nx619j/proprietary/vendor/lib/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideolite.bin \
-    vendor/nubia/nx619j/proprietary/vendor/lib/camera/titan17x_usecases.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/titan17x_usecases.bin \
-    vendor/nubia/nx619j/proprietary/vendor/lib/hw/audio.primary.sdm845.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.sdm845.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.qcom.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qti.chi.override.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdb-fts.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbrtac.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadiertac.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libadm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadm.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_beautyshot.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libarcsoft_high_dynamic_range.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_high_dynamic_range.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_log_utils.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioalsa.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioparsers.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libcamxfdalgov7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdalgov7.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libcamxfdengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdengine.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libcamxstatscore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxstatscore.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxtintlessalgo.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libcom.nubia.chinodenubiautils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcom.nubia.chinodenubiautils.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcom.qti.chinodeutils.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libcsd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcsd-client.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc2.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmpbase.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswregistrationalgo.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalclient.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/libtinycompress_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress_vendor.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/soundfx/libdtsaudio.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdtsaudio.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcbassboost.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcvirt.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libshoebox.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libvolumelistener.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib64/hw/fingerprint.goodix.sdm845.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.sdm845.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib64/hw/fingerprint.silead.spec.sdm845.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.silead.spec.sdm845.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib64/libgf_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_ca.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib64/libgoodixhwfingerprint.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgoodixhwfingerprint.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib64/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterdeviceutils.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib64/libkeymasterprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterprovision.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib64/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterutils.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib64/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtikeymaster4.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib64/libsl_fp_impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsl_fp_impl.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib64/libteeclientjni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libteeclientjni.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib64/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalclient.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib64/sensors.oem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.oem.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib64/vendor.nubia.ifaa@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nubia.ifaa@1.0-impl.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib64/vendor.nubia.ifaa@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nubia.ifaa@1.0.so \
-    vendor/nubia/nx619j/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so
+    vendor/nubia/nx619j/proprietary/vendor/lib/camera/titan17x_usecases.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/titan17x_usecases.bin
 
 PRODUCT_PACKAGES += \
-    audiosphere
+    libthermalclient \
+    com.qti.sensor.imx000 \
+    com.qti.sensor.imx318 \
+    com.qti.sensor.imx362 \
+    com.qti.sensor.imx499 \
+    com.qti.sensor.imx519 \
+    com.qti.sensor.nx619_imx519 \
+    com.qti.sensor.nx619_ov8856 \
+    com.qti.sensor.ov12a10 \
+    com.qti.sensor.ov13855 \
+    com.qti.sensor.ov13880 \
+    com.qti.sensor.ov8856 \
+    com.qti.sensor.s5k2x7 \
+    com.arcsoft.node.capturebokeh \
+    com.arcsoft.node.realtimebokeh \
+    com.nubia.node.nubiaalgorithm \
+    com.nubia.node.nubiahdr \
+    com.nubia.node.realtimeaicamera \
+    com.nubia.node.realtimealgorithm \
+    com.qti.eisv2 \
+    com.qti.eisv3 \
+    com.qti.hvx.addconstant \
+    com.qti.hvx.binning \
+    com.qti.node.dummyrtb \
+    com.qti.node.dummysat \
+    com.qti.node.eisv2 \
+    com.qti.node.eisv3 \
+    com.qti.node.gpu \
+    com.qti.node.memcpy \
+    com.qti.node.remosaic \
+    com.qti.node.stich \
+    com.qti.node.swregistration \
+    com.qti.stats.aec \
+    com.qti.stats.af \
+    com.qti.stats.afd \
+    com.qti.stats.asd \
+    com.qti.stats.awb \
+    com.qti.stats.awbwrapper \
+    com.qti.stats.pdlib \
+    com.qti.stats.pdlibsony \
+    com.qti.stats.pdlibwrapper \
+    com.qtistatic.stats.aec \
+    com.qtistatic.stats.af \
+    com.qtistatic.stats.awb \
+    com.qtistatic.stats.pdlib \
+    audio.primary.sdm845 \
+    camera.qcom \
+    com.qti.chi.override \
+    libacdb-fts \
+    libacdbloader \
+    libacdbrtac \
+    libadiertac \
+    libadm \
+    libarcsoft_beautyshot \
+    libarcsoft_high_dynamic_range \
+    libaudcal \
+    libaudio_log_utils \
+    libaudioalsa \
+    libaudioparsers \
+    libcamxfdalgov7 \
+    libcamxfdengine \
+    libcamxstatscore \
+    libcamxtintlessalgo \
+    libcom.nubia.chinodenubiautils \
+    libcom.qti.chinodeutils \
+    libcsd-client \
+    libdts-eagle-shared \
+    libmdsprpc \
+    libmmcamera_faceproc \
+    libmmcamera_faceproc2 \
+    libmpbase \
+    libqtigef \
+    libswregistrationalgo \
+    libtinycompress_vendor \
+    libasphere \
+    libdtsaudio \
+    libqcbassboost \
+    libqcreverb \
+    libqcvirt \
+    libshoebox \
+    libvolumelistener \
+    android.hardware.gatekeeper@1.0-impl-qti \
+    fingerprint.goodix.sdm845 \
+    fingerprint.silead.spec.sdm845 \
+    libgf_ca \
+    libgf_hal \
+    libgoodixhwfingerprint \
+    libkeymasterdeviceutils \
+    libkeymasterprovision \
+    libkeymasterutils \
+    libqtikeymaster4 \
+    libsl_fp_impl \
+    libteeclientjni \
+    sensors.oem \
+    sensors.ssc \
+    vendor.goodix.hardware.biometrics.fingerprint@2.1 \
+    vendor.nubia.ifaa@1.0-impl \
+    vendor.nubia.ifaa@1.0 \
+    vendor.qti.hardware.fingerprint@1.0 \
+    audiosphere \
+    hvdcp_opti \
+    android.hardware.gatekeeper@1.0-service-qti \
+    android.hardware.keymaster@4.0-service-qti \
+    thermal-engine
